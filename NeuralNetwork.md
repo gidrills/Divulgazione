@@ -14,7 +14,7 @@ Bè semplificando molto una rete neurale umana possiamo dire che i neuroni sono 
 
 Perfetto, una rete artificiale è molto simile, un neurone artificiale è però più semplicemente una funzione, in grado di prendere degli input e produrre un output. 
 Quindi in termini matematici...
-$$f(x_1, x_2)$$
+$$f(x_1, x_2... x_n)$$
 
 
 Questi input sono tipicamente valori tra 0 e 1. Mentre le funzioni dette funzioni di attivazioni
