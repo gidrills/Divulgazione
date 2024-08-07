@@ -14,7 +14,7 @@ Bè semplificando molto una rete neurale umana possiamo dire che i neuroni sono 
 
 Perfetto, una rete artificiale è molto simile, un neurone artificiale è però più semplicemente una funzione, in grado di prendere degli input e produrre un output.
 
-Questi input sono tipicamente valori che semplificando possiamo dire vanno da -1 a 1. Mentre le funzioni sono dette funzioni di attivazioni e sono tipicamente abbastanza semplici.
+Questi input sono tipicamente valori che semplificando possiamo dire vanno da -1 a 1. Mentre le funzioni sono dette funzioni di attivazione e sono tipicamente abbastanza semplici per evitare calcoli troppo pesanti in fase di addestramento.
 Per comodità di sviluppo si tende a organizzare i neuroni artificiali in layer e tipicamente ogni neurone di un layer è collegato con tutti i neuroni del layer successivo come in figura.
 
 <p align="center">
@@ -31,6 +31,9 @@ Nella figura sopra quindi i collegamenti dovrebbero avere dei colori diversi, pe
 <p align="center">
   <img src= "https://github.com/user-attachments/assets/7286a608-50ab-4ad0-bbb3-42d491370690" alt = "reteNeurale">
 </p>
+<p align="center">
+  Rispettivamente w1,w2,w3,w4 evidenziati in colore rosso, giallo, verde, blu
+</p>
 
 Il rafforzamento dei collegamenti avviene durante quella che è detta "fase di training" di una rete neurale in cui a una rete neurale si fanno analizzare una grosso di quantità di dati, e si rafforzano i collegamenti tra i neuroni o si riducono.
 
@@ -40,7 +43,7 @@ Abbiamo compreso in termini intuitivi cosa sia una rete neurale, aggiungiamo poc
 
 Abbiamo detto che un neurone è una funzione i cui input sono gli outuput dei neuroni del layer precedente. Quindi un neurone come nell'immagine sopra può essere scritto come una funzione dei 4 output dei neuroni del layer precedente. La funzione è $$f(x_1, x_2, x_3, x_4)$$.
 Tipicamente questa funzione è detta Funzione di Attivazione ed è molto semplice in quanto è necessario calcolarne la derivata più e più volte durante la fase di training. Le funzioni più usate sono la ReLu la cui derivata è molto semplice e la tangente iperbolica (che seppur abbia un nome spaventoso è una funzione piuttosto semplice).
-Per quanto riguarda il peso da attribuire ai collegamenti, basta aggiungere dei pesi, che quantifichino quanto l'informazione x_1, x_2, x_3, x_4 siano importanti. Questi pesi andranno indicati con w_1, w_2, w_3 e w_4. E per comodità in questo esempio facciamoli assumere valori tra 0 e 1. Un peso con valore 1 indicherà che l'informazione è molto importante, un peso con valore 0.5 mediamente importante e un peso con valore 0.25 poco importante e così via. Addirittura se per esempio il peso w_4 andasse a 0 questo vorrebbe dire che non importa quale outpur il neurone 4 del layer precedente stia producendo io lo ignorerò completamente.
+Per quanto riguarda il peso da attribuire ai collegamenti, basta aggiungere dei pesi, che quantifichino quanto l'informazione $$x_1, x_2, x_3, x_4$$ siano importanti. Questi pesi andranno indicati con w_1, w_2, w_3 e w_4. E per comodità in questo esempio facciamoli assumere valori tra 0 e 1. Un peso con valore 1 indicherà che l'informazione è molto importante, un peso con valore 0.5 mediamente importante e un peso con valore 0.25 poco importante e così via. Addirittura se per esempio il peso w_4 andasse a 0 questo vorrebbe dire che non importa quale outpur il neurone 4 del layer precedente stia producendo io lo ignorerò completamente.
 In questo modo la funzione diventa $$f(x_1w_1,x_2w_2,x_2w_3,x_4w_4)$$
 
 ##Training## 
