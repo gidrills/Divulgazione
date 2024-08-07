@@ -1,3 +1,5 @@
+#Machine Learning e Vantaggio Quantistico#
+
 Nell' ottobre del 2019 la comunità scientifica è stata sorpresa da un articolo pubblicato da Google sulla rivista Nature in cui affermava di aver ottenuto la supremazia quantistica (Quantum Primacy). Google era riuscita a dimostrare che il loro computer quantistico era in grado di eseguire una computazione  (ha impiegato 200 secondi) in un tempo esponenzialmente minore rispetto a uno classico (10 000 anni). Il risultato raggiunto da Google però risulta essere meno sorprendente se si considera che il problema computazionale a cui si sottoponevano le macchine era appositamente disegnato per far si che il computer quantistico vincesse. Tralasciando eventuali contestazioni delle aziende rivali (IBM per prima ha affermato che in realtà il computer classico era in grado di compiere il calcolo in 2 giorni), risulta ovvio che il prossimo obiettivo per gran parte della comunità a lavoro su questo campo sia quello di ottenere la Supremazia Quantistica per un problema computazionale di effettiva utilità: il cosidetto Vantaggio Quantistico. Ed è in questo scenario che si inserisce il Quantum Machine Learning, una possibile applicazione d
 
 Ok, quindi il Quantum Machin Learning potrebbe dimostrare il Vantaggio Quantistico, ma come funziona?
@@ -25,4 +27,8 @@ La risposta semplice è "no", e la risposta complicata come spesso accade è "di
 - **Speedup**: L'algoritmo quantistico risolve il problema più velocemente di uno classico.
 - **Relevance**: L'algoritmo deve essere utile (altrimenti parleremmo solo di Supremazia Quantistica).
 - **Available**: La tecnologia per implementare l'algoritmo deve essere accessibile (dimostrare il vantaggio quantistico su un dispositivo costoso non avrebbe senso).
+
+Riguardante al primo, e terzo punto come già evideziato da F. Petruccione nel suo libro "Machine Learning with Quantum Computers" (ultimo capitolo per chi fosse interessato alle dimostrazioni), la ricerca sembra suggerire che gli algoritmi quantistici di machine learning siano in grado di mantenere un certo grado di espressività (sono in grado di comprendere argomenti complessi) senza overfittare. Condizione che è spesso difficile ottenere con algoritmi classici in quanto prendendo ad esempio una rete neurale classica, aumentare l'espressività si puo tradurre in richiedere di aumentare il numero di neuroni (o di layer),
+Riguardante al terzo punto i risultati più incoraggianti vengono anche questa volta dalla ricerca, come evidenzia Hirotoshi Hirai, nel suo articolo pubblicato su Nature il 13/04/2024 "Practical application of quantum neural network to materials informatics" ad oggi le reti neurali quantistiche hanno ricevuto una attenzione maggiore grazie alla loro capacità di resistere all'overfitting senza perdere in espressività pur mantenendo il campione di training "piccolo".  
+
 
