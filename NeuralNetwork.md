@@ -19,12 +19,7 @@ Perfetto una rete artificiale è molto simile, un neurone artificiale è però p
   I cerchietti sono i neuroni, le linee i collegamenti tra neuroni.
 </p>
 
-Il neurone artificiale è però più semplicemente una funzione e l' impulso elettrico un numero.
-Ovviamente ogni neurone può ricevere più numeri, in modo più formale diremo può ricevere più "inputs", e produrre un solo numero l' "output".
-I neuroni artificiali sono rappresentati tipicamente come dei cerchietti e le loro connessioni (i canali attraverso cui ricevono gli inputs) con delle righe.
-
-
-
+Perfetto, e le sinapsi? Le sinapsi sono la parte interessante, concentriamoci sul primo neurone dell'hidden layer (colorato in nero), come già detto riceverà informazioni da tutti i neuroni del layer precedente, ma ha senso dare lo stesso peso alle informazioni provenienti dai 4 neuroni diversi? Se due neuroni dicessero "no" e altri due neuroni dicessero "si" io neurone nero che informazione dovrei produrre? Produrrei probabilmente a mia volta un output che sarebbe o "si" o "no". Risulta ovvio che l'introduzione di un sistema per pesare le informazioni ottenute aiuti ad aumentare la complessità della rete neurale.
 
 ## Ok, ma come funziona una rete neurale?
 
