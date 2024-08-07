@@ -9,7 +9,8 @@ Ed è in questo scenario che si inserisce il Quantum Machine Learning. Cosa è q
 Ad oggi, gran parte delle persone probabilmente conosce già come funziona una rete neurale artificiale, alternativamente consiglio la lettura di questo https://github.com/gidrills/Divulgazione/blob/main/NeuralNetwork.md
 
 
-Per parlare di reti neurali quantistiche è necessaria solo ancora un pochino di teoria. Definiamo cosa sono i Qubit.
+Per parlare di reti neurali quantistiche è necessaria solo ancora un pochino di teoria.
+
 In informatica pura, si utilizzano i bit, in informatica quantistica si utilizzano i qubit. Nulla di troppo complicato, possiamo vedere i bit come una moneta in grado di assumere lo stato 0 o 1 mentre il qubit come una sfera "magica" in grado di essere lanciata e poter assumere tutti gli stati possibili tra 0 e 1 (0.1 ma anche 0.234 ma anche 0.452 ecc.), questa è una analogia che effettivamente si utilizza in ambito accademico, quindi nulla di troppo assurdo.
 
 <p align="center">
