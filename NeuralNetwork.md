@@ -21,13 +21,17 @@ Per comodità di sviluppo si tende a organizzare i neuroni artificiali in layer 
   <img src="https://github.com/user-attachments/assets/79441ba7-54d5-4807-b2b3-586e829446a2" alt="reteNeurale">
 </p>
 <p align="center">
-  I cerchietti sono i neuroni, le linee i collegamenti tra neuroni.
+  I cerchietti sono i neuroni, le linee i collegamenti tra neuroni (sinapsi).
 </p>
 
 
-Perfetto, e le sinapsi? Le sinapsi sono la parte interessante, delle reti neurali sia naturali che artificiali. Senza l'utilizzo delle sinapsi le reti non sarebbero in grado di "migliorare". Come facciamo a dire a una rete che si sta comportando bene o che si sta comportando male? Bè rafforziamo le sinapsi, rafforziamo i collegamenti tra alcuni neuroni che vogliamo si "attivino" di più e riduciamo i collegamenti tra altri che vogliamo si attivino "meno". In altri termini stabiliamo quali neuroni lavorano bene insieme e quali lavorano male. Quindi in breve le sinapsi sono utilizzate per dire alla nostra rete neurale come si sta comportando.
+Perfetto, e le sinapsi? Bè questa è la parte interessante delle reti neurali sia naturali che artificiali. Partiamo da una domanda, come facciamo a dire a una rete che si sta comportando bene o che si sta comportando male? Bè rafforziamo le sinapsi, rafforziamo i collegamenti tra alcuni neuroni che vogliamo si "attivino" di più e riduciamo i collegamenti tra altri che vogliamo si attivino "meno". In altri termini stabiliamo quali neuroni lavorano bene insieme e quali lavorano male. 
+Nella figura sopra quindi i collegamenti dovrebbero avere dei colori diversi, per distinguere che non sono tutti uguali.
+<p align="center">
+  <img src= "https://github.com/user-attachments/assets/7286a608-50ab-4ad0-bbb3-42d491370690" alt = "reteNeurale">
+</p>
 
-Ok abbiamo capito a cosa servono, ma effettivamente cosa sono le sinapsi in una rete artificiale? La risposta è piuttosto semplice in realtà, supponiamo di essere un neurone, quello colorato in nero in figura, come posso distinguere la potenza dei collegamenti, come posso in termini ? Bè semplicemente dando più peso alla informazioni che viene da un determinato neuroni rispetto alla informazione che viene da un altro.
+Ok abbiamo capito a cosa servono queste sinapsi, ma effettivamente cosa sono le sinapsi in una rete artificiale? La risposta è piuttosto semplice in realtà, supponiamo di essere un neurone, quello colorato in nero in figura, come posso distinguere la potenza dei collegamenti, la risposta più semplice è associo un numero a questi collegamenti ovvero un "peso" ? Bè semplicemente dando più peso alla informazioni che viene da un determinato neuroni rispetto alla informazione che viene da un altro.
 
 ## ?
 
