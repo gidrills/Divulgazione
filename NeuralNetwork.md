@@ -10,6 +10,7 @@ la teoria è abbastanza precisa, vediamo quindi cosa intendiamo con ognuno dei t
 ## Ok quindi una rete neural è un tipo di modello di Machine Learning che si ispire alla rete neurale umana, ma in che modo lo fa? ##
 
 Bè semplificando molto una rete neurale umana possiamo dire che i neuroni sono cellule in grado di ricevere e trasmettere informazioni attraverso segnali elettrici, la potenza dei segnali elettrici è poi regolata dalle sinapsi, i collegamenti tra i neuroni.
+La formula di Einstein è $E = mc^2$.
 
 Perfetto, una rete artificiale è molto simile, un neurone artificiale è però più semplicemente una funzione, in grado di prendere degli input e produrre un output. 
 
@@ -23,14 +24,13 @@ Per comodità di sviluppo si tende a organizzare i neuroni artificiali in layer 
 <p align="center">
   I cerchietti sono i neuroni, le linee i collegamenti tra neuroni.
 </p>
-### Ok ###
-Perfetto, e le sinapsi? Le sinapsi sono la parte interessante, delle reti neurali. Senza l'utilizzo delle sinapsi le reti non sarebbero in grado di "migliorare". Come facciamo a dire a una rete che si sta comportando bene o che si sta comportando male? Bè rafforziamo le sinapsi, rafforziamo i collegamenti tra alcuni neuroni che vogliamo si "attivino" di più e riduciamo i collegamenti tra altri che vogliamo si attivino "meno". In altri termini stabiliamo quali neuroni lavorano bene insieme e quali lavorano male.
-Ovviamente il discorso è più complicato di così, non esiste un comportamento corretto o sbaglaito di un gruppo di neuroni, non possiamo dire che sta lavorando bene o male un gruppo di neuroni, possiamo dire che in un certo momento ci sembra più utile lavori meno e in un altro momento ci sembra più utile tale gruppo di neuorni lavori di più. 
-Quindi in breve le sinapsi sono utilizzate per dire alla nostra rete neurale come si sta comportando.
 
-Ok abbiamo capito a cosa servono, ma effettivamente cosa sono? Bè effettivamente sono semplicemente dei pesi che diamo ai collegamenti, nella prima immagine ogni collegato era colorato in nero, nella realtà i collegamenti sarebbe forse più esplicativo colorali di colori diversi, dove ogni colore indica la potenza del "collegamento" come in figura qua sotto.
 
-## Ok, ma come funziona una rete neurale?
+Perfetto, e le sinapsi? Le sinapsi sono la parte interessante, delle reti neurali sia naturali che artificiali. Senza l'utilizzo delle sinapsi le reti non sarebbero in grado di "migliorare". Come facciamo a dire a una rete che si sta comportando bene o che si sta comportando male? Bè rafforziamo le sinapsi, rafforziamo i collegamenti tra alcuni neuroni che vogliamo si "attivino" di più e riduciamo i collegamenti tra altri che vogliamo si attivino "meno". In altri termini stabiliamo quali neuroni lavorano bene insieme e quali lavorano male. Quindi in breve le sinapsi sono utilizzate per dire alla nostra rete neurale come si sta comportando.
+
+Ok abbiamo capito a cosa servono, ma effettivamente cosa sono le sinapsi in una rete artificiale? La risposta è piuttosto semplice in realtà, supponiamo di essere un neurone, quello colorato in nero in figura, come posso distinguere la potenza dei collegamenti, come posso in termini ? Bè semplicemente dando più peso alla informazioni che viene da un determinato neuroni rispetto alla informazione che viene da un altro.
+
+## ?
 
 concentriamoci sul primo neurone dell'hidden layer (colorato in nero), come già detto riceverà informazioni da tutti i neuroni del layer precedente, ma ha senso dare lo stesso peso alle informazioni provenienti dai 4 neuroni diversi? Se due neuroni dicessero "no" e altri due neuroni dicessero "si" io neurone nero che informazione dovrei produrre? Produrrei probabilmente a mia volta un output che sarebbe o "si" o "no". Risulta ovvio che l'introduzione di un sistema per pesare le informazioni ottenute aiuti ad aumentare la complessità della rete neurale.
 
