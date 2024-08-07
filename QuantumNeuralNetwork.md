@@ -9,7 +9,7 @@ Cosa vuol dire questo?
 
 Per parlare di reti neurali quantistiche è necessaria solo ancora un pochino di teoria. Definiamo cosa sono i Qubit.
 In informatica pura, si utilizzano i bit, in informatica quantistica si utilizzano i qubit. Nulla di troppo complicato, possiamo vedere i bit come una moneta in grado di assumere lo stato 0 o 1 mentre il qubit come una sfera "magica" in grado di essere lanciata e poter assumere tutti gli stati possibili tra 0 e 1 (0.1 ma anche 0.234 ma anche 0.452 ecc.) .
-![image](https://github.com/user-attachments/assets/517aec48-40b0-42e5-bfce-c7e6f74032a0)
+![image](https://github.com/user-attachments/assets/e37ed8b7-47d6-4080-b558-8b823b8585f3)
 
 
 
