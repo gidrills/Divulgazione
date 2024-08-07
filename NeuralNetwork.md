@@ -7,7 +7,7 @@ la teoria è abbastanza precisa, vediamo quindi cosa intendiamo con ognuno dei t
 - **Machine Learning** Disciplina della AI che in particolare si occupa di far imparare ai computer, attraverso i dati, come risolvere i problemi senza essere esplicitamente istruita per farlo.
 - **Neural Network** Tipo di modello (rappresentazione in termini matematici, ma anche non) di Machine Learning. In particolare questo modello si ispira alle rete neurale naturale.
 
-Ok quindi una rete neural è un tipo di modello di Machine Learning che si ispire alla rete neurale umana, ma in che modo lo fa?
+## Ok quindi una rete neural è un tipo di modello di Machine Learning che si ispire alla rete neurale umana, ma in che modo lo fa? ##
 
 Bè semplificando molto una rete neurale umana possiamo dire che i neuroni sono cellule in grado di ricevere e trasmettere informazioni attraverso segnali elettrici, la potenza dei segnali elettrici è poi regolata dalle sinapsi, i collegamenti tra i neuroni.
 
