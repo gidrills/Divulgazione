@@ -37,7 +37,7 @@ Nella figura sopra quindi i collegamenti dovrebbero avere dei colori diversi, pe
 
 Il rafforzamento dei collegamenti avviene durante quella che è detta "fase di training" di una rete neurale in cui a una rete neurale si fanno analizzare una grossa quantità di dati, e si rafforzano i collegamenti tra i neuroni o si riducono.
 
-## In termini più matematici ##
+### In termini più matematici ###
 
 Abbiamo compreso in termini intuitivi cosa sia una rete neurale, aggiungiamo poca, pochissima matematica.
 
