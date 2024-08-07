@@ -5,11 +5,11 @@ Spesso e volentieri si tenede a fare confusione su cosa sia una rete neurale, co
 la teoria è abbastanza precisa, vediamo quindi cosa intendiamo con ognuno dei termini elencati.
 - **AI** L'insieme delle discipline Natural Language Processing, Knowledge Representation, Automated Reasoning e Machine Learning
 - **Machine Learning** Disciplina della AI che in particolare si occupa di far imparare ai computer, attraverso i dati, come risolvere i problemi senza essere esplicitamente istruita per farlo.
-- **Neural Network** Tipo di modello (rappresentazione in termini matematici, ma anche non) di Machine Learning. In particolare questo modello si ispira alle rete neurale naturale.
+- **Neural Network** Tipo di modello (rappresentazione in termini matematici, ma anche grafici) di Machine Learning. In particolare questo modello si ispira alle rete neurale naturale.
 
 ## Ok quindi una rete neurale è un tipo di modello di Machine Learning che si ispira alla rete neurale umana, ma in che modo lo fa? ##
 
-Bè semplificando molto una rete neurale umana possiamo dire che i neuroni sono cellule in grado di ricevere e trasmettere informazioni attraverso segnali elettrici, la potenza dei segnali elettrici è poi regolata dalle sinapsi, ovvero i collegamenti tra i neuroni.
+Bè, semplificando molto una rete neurale umana possiamo dire che i neuroni sono cellule in grado di ricevere e trasmettere informazioni attraverso segnali elettrici, la potenza dei segnali elettrici è poi regolata dalle sinapsi, ovvero i collegamenti tra i neuroni.
 
 
 Perfetto, una rete artificiale è molto simile, un neurone artificiale è però più semplicemente una funzione, in grado di prendere degli input e produrre un output.
@@ -25,7 +25,7 @@ Per comodità di sviluppo si tende a organizzare i neuroni artificiali in layer 
 </p>
 
 
-Perfetto, e le sinapsi? Bè questa è la parte interessante delle reti neurali sia naturali che artificiali. Partiamo da una domanda, come facciamo a dire a una rete che si sta comportando bene o che si sta comportando male? Bè rafforziamo le sinapsi, rafforziamo i collegamenti tra alcuni neuroni che vogliamo si "attivino" di più e riduciamo i collegamenti tra altri che vogliamo si attivino "meno" . In altri termini stabiliamo quali neuroni lavorano bene insieme e quali lavorano male. 
+Perfetto, e le sinapsi ? Questa è la parte interessante delle reti neurali sia naturali che artificiali. Partiamo da una domanda, come facciamo a dire a una rete che si sta comportando bene o che si sta comportando male? Bè Rafforziamo le sinapsi, rafforziamo i collegamenti tra alcuni neuroni che vogliamo si "attivino" di più e riduciamo i collegamenti tra altri che vogliamo si attivino "meno" . In altri termini stabiliamo quali neuroni lavorano bene insieme e quali lavorano male. 
 Nella figura sopra quindi i collegamenti dovrebbero avere dei colori diversi, per distinguere che non sono tutti uguali.
 
 <p align="center">
@@ -35,7 +35,7 @@ Nella figura sopra quindi i collegamenti dovrebbero avere dei colori diversi, pe
   Rispettivamente w1,w2,w3,w4 evidenziati in colore rosso, giallo, verde, blu. Inoltre sono anche indicati i valori output prodotti dai neuroni dell'input layer
 </p>
 
-Il rafforzamento dei collegamenti avviene durante quella che è detta "fase di training" di una rete neurale in cui a una rete neurale si fanno analizzare una grosso di quantità di dati, e si rafforzano i collegamenti tra i neuroni o si riducono.
+Il rafforzamento dei collegamenti avviene durante quella che è detta "fase di training" di una rete neurale in cui a una rete neurale si fanno analizzare una grossa quantità di dati, e si rafforzano i collegamenti tra i neuroni o si riducono.
 
 ## In termini più matematici ##
 
@@ -55,11 +55,15 @@ Supponiamo di star insegnando una rete neurale come distinguere i numeri scritti
 
 Supponiamo di avere 50 immagini e di voler processare 10 immagini per volta (si dice che avremo 5 batch da 10 immagini) e ovviamente di sapere i risultati che ci attendiamo.
 All'inizio i pesi vengono calcolati casualmente,  vengono inserite le 10 immagini in input (input layer) , la rete neurale farà i suoi conti e restituirà un output. L'output viene confrontato con quello che ci attendevamo e se non coincide si dirà alla rete di calcolare
-nuovamente i pesi, si procederà così al secondo batch con i nuovi pesi, la rete farà nuovamente i conti e restituirà un output, tale output sarà confrontato con i risultati attesi e così via. Terminati i 5 batch di immagini, avremo completato una epoca (tutto il campione di immagini sarà stato esaminato) a quel punto l'addestramento potrà terminare o continuare con una seconda epoca in cui si rianalizeranno le stesse immagini della prima.
+nuovamente i pesi (stavolta però tenendo conto del fatto che i vecchi pesi hanno funzionato male) si procederà così al secondo batch con i nuovi pesi, la rete farà nuovamente i conti e restituirà un output, tale output sarà confrontato con i risultati attesi e così via. Terminati i 5 batch di immagini, avremo completato una epoca (tutto il campione di immagini sarà stato esaminato) a quel punto l'addestramento potrà terminare o continuare con una seconda epoca in cui si rianalizeranno le stesse immagini della prima partendo dai pesi che abbiamo ottenuto finora.
+
+### Come scegliere i pesi ###
 
 Nella realtà ovviamente le reti neurali sono gigantesche e la quantità di pesi è spropositata quindi non si puo andare completamente a caso per la scelta dei pesi, si impiegherebbe una eternità. Serve quindi un criterio per comprendere come aggiornare i pesi. 
-Volendo evitare di complicare troppo la speigazione, possiamo dire che è possibile definire una funzione, detta funzione di loss stavolta in grado di misurare la distanza tra i valori che la rete neurale ha prodotto e i valori che ci si aspettava. Questa funzione sarà chiaramente una funzione che dipende dai pesi (w_1,w_2 ecc.) e che noi vorremo "minimizzare" ovvero vorremo trovare in quale punto questa funzione varrà 0, cioè per quali pesi (w_1,w_2 ecc) la distanza tra i valori ottenuti dalla rete neurale e quelli attesi è nulla.
-Fortunatamente in matematica esista uno strumento potentissimo per fare questo, la derivata. La derivata ci dice se in un certo punto la funzione cresce o decresce, e se variando il peso w_1 ad esempio la funzione crescerà o decrescerà. La soluzione sarà quindi semplicemente quella di calcolare la derivata della funzione di loss alla conclusione di ogni batch e aggiornare i pesi aumentandoli o diminuendoli a seconda che la derivata ( in realtà si parlerebbe di gradiente, ma lasciamo stare i formalismi ) cresca o decresca.
+Volendo evitare di complicare troppo la spiegazione, possiamo dire che è possibile definire una funzione, detta funzione di loss stavolta in grado di misurare la distanza tra i valori che la rete neurale ha prodotto e i valori che ci si aspettava. Questa funzione sarà chiaramente una funzione che dipende dai pesi (w_1,w_2 ecc.) e che noi vorremo "minimizzare" ovvero vorremo trovare in quale punto questa funzione varrà 0, cioè per quali pesi (w_1,w_2 ecc) la distanza tra i valori ottenuti dalla rete neurale e quelli attesi è nulla, cosa che accade esattamente quando i valori ottenuti dalla rete neurale e quelli attesi coincidono.
+Fortunatamente in matematica esiste uno strumento potentissimo per fare questo, la derivata. La derivata ci dice se in un certo punto la funzione cresce o decresce, e se variando il peso w_1 ad esempio la funzione crescerà o decrescerà. La soluzione sarà quindi semplicemente quella di calcolare la derivata della funzione di loss alla conclusione di ogni batch e aggiornare i pesi aumentandoli o diminuendoli a seconda che la derivata (in realtà si parlerebbe di gradiente, ma lasciamo stare i formalismi) cresca o decresca.
+
+Tutto qui, questo è come funziona una rete neurale in termini intuitivi.
 
 
 
