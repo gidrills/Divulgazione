@@ -11,7 +11,7 @@ la teoria è abbastanza precisa, vediamo quindi cosa intendiamo con ognuno dei t
 ## Ok, ma come funziona una rete neurale?
 
 In realtà è abbastanza semplice, ci basta definire cosa sia un neurone.
-**Neurone** oggetto in grado di prendere diversi input (valori in ingresso) e restituire un singolo output (in matematica, è una funzione di più variabili f(x,y,....z)). 
+-**Neurone** oggetto in grado di prendere diversi input (valori in ingresso) e restituire un singolo output (in matematica, è una funzione di più variabili f(x,y,....z)). 
 Una rete neurale altro non è che un insieme di Neuroni artificiali organizzati in strutture dette layer. Tipicamente si utilizzano almeno 3 layers, input layer, hidden layer, output layer.
 
 <p align="center">
