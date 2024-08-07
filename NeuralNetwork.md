@@ -7,7 +7,7 @@ la teoria è abbastanza precisa, vediamo quindi cosa intendiamo con ognuno dei t
 - **Machine Learning** Disciplina della AI che in particolare si occupa di far imparare ai computer, attraverso i dati, come risolvere i problemi senza essere esplicitamente istruita per farlo.
 - **Neural Network** Tipo di modello (rappresentazione in termini matematici, ma anche non) di Machine Learning. In particolare questo modello si ispira alle rete neurale naturale.
 
-## Ok quindi una rete neural è un tipo di modello di Machine Learning che si ispire alla rete neurale umana, ma in che modo lo fa? ##
+## Ok quindi una rete neurale è un tipo di modello di Machine Learning che si ispira alla rete neurale umana, ma in che modo lo fa? ##
 
 Bè semplificando molto una rete neurale umana possiamo dire che i neuroni sono cellule in grado di ricevere e trasmettere informazioni attraverso segnali elettrici, la potenza dei segnali elettrici è poi regolata dalle sinapsi, ovvero i collegamenti tra i neuroni.
 
@@ -27,22 +27,23 @@ Per comodità di sviluppo si tende a organizzare i neuroni artificiali in layer 
 
 Perfetto, e le sinapsi? Bè questa è la parte interessante delle reti neurali sia naturali che artificiali. Partiamo da una domanda, come facciamo a dire a una rete che si sta comportando bene o che si sta comportando male? Bè rafforziamo le sinapsi, rafforziamo i collegamenti tra alcuni neuroni che vogliamo si "attivino" di più e riduciamo i collegamenti tra altri che vogliamo si attivino "meno". In altri termini stabiliamo quali neuroni lavorano bene insieme e quali lavorano male. 
 Nella figura sopra quindi i collegamenti dovrebbero avere dei colori diversi, per distinguere che non sono tutti uguali.
+
 <p align="center">
   <img src= "https://github.com/user-attachments/assets/7286a608-50ab-4ad0-bbb3-42d491370690" alt = "reteNeurale">
 </p>
 
-Ok abbiamo capito a cosa servono queste sinapsi, ma effettivamente cosa sono le sinapsi in una rete artificiale? La risposta è piuttosto semplice in realtà, supponiamo di essere un neurone, quello colorato in nero in figura, come posso distinguere la potenza dei collegamenti, la risposta più semplice è associo un numero a questi collegamenti ovvero un "peso" ? Bè semplicemente dando più peso alla informazioni che viene da un determinato neuroni rispetto alla informazione che viene da un altro.
+Il rafforzamento dei collegamenti avviene durante quella che è detta "fase di training" di una rete neurale in cui a una rete neurale si fanno analizzare una grosso di quantità di dati, e si rafforzano i collegamenti tra i neuroni che sembrano comportarsi meglio.
 
-## ?
+## Un po' di matematica ##
 
-concentriamoci sul primo neurone dell'hidden layer (colorato in nero), come già detto riceverà informazioni da tutti i neuroni del layer precedente, ma ha senso dare lo stesso peso alle informazioni provenienti dai 4 neuroni diversi? Se due neuroni dicessero "no" e altri due neuroni dicessero "si" io neurone nero che informazione dovrei produrre? Produrrei probabilmente a mia volta un output che sarebbe o "si" o "no". Risulta ovvio che l'introduzione di un sistema per pesare le informazioni ottenute aiuti ad aumentare la complessità della rete neurale.
+Abbiamo compreso in termini intuitivi cosa sia una rete neurale, aggiungiamo poca, pochissima matematica.
 
-## Ok, ma come funziona una rete neurale?
-
-In realtà è abbastanza semplice, ci basta defi
-- **Neurone** oggetto in grado di prendere diversi input (valori in ingresso) e restituire un singolo output (in matematica, è una funzione di più variabili f(x,y,....z)). 
-
-Una rete neurale altro non è che un insieme di Neuroni artificiali organizzati in strutture dette layer. Tipicamente si utilizzano almeno 3 layers, input layer, hidden layer, output layer.
+Abbiamo detto che un neurone è una funzione i cui input sono gli outuput dei neuroni del layer precedente. Quindi un neurone come nell'immagine sopra può essere scritto come una funzione dei 4 output dei neuroni del layer precedente. La funzione è $$f(x_1, x_2, x_3, x_4)$$.
+Tipicamente questa funzione è detta Funzione di Attivazione ed è molto semplice in quanto è necessario calcolarne la derivata più e più volte durante la fase di training. Le funzioni più usate sono la ReLu la cui derivata è molto semplice e la tangente iperbolica (che seppur abbia un nome spaventoso è una funzione piuttosto semplice).
+Per quanto riguarda il peso da attribuire ai collegamenti, basta aggiungere dei pesi, che quantifichino quanto l'informazione x_1, x_2, x_3, x_4 siano importanti. Questi pesi andranno indicati con w_1, w_2, w_3 e w_4. E per comodità in questo esempio facciamoli assumere valori tra 0 e 1. Un peso con valore 1 indicherà che l'informazione è molto importante, un peso con valore 0.5 mediamente importante e un peso con valore 0.25 poco importante. In questo modo la funzione diventa $$f(x_1*w_1, x_2*w_2, x_3*w_3, x_4*w_4)$$.
 
 
-Una re
+
+
+
+
