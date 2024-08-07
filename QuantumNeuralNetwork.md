@@ -18,3 +18,10 @@ Quindi sì, in un certo qualsenso un qubit può contenere molta più informazion
 Ecco, una rete neurale quantstica funziona in modo un po' diverso da una rete neurale classica, non esistono i neuroni, non esiste proprio una rete, esiste piuttosto un circuito quantistico in grado di operare sui qubit. Come opera sui qubit? Attraverso l'utilizzo di gate quantistici, oggetti in grado di "ruotare" il qubit. La parte interessante è che a seconda di quanto si ruotino questi qubit è possibile ottenere risposte diverse dalla rete quantistica e qui abbiamo l'analogia con la rete neurale classsica. In una rete neurale classica si cercano i pesi migliori per ottenere una risposta corretta dalla rete neurale, in una rete neurale quantistica si cercano le rotazioni migliori (letteralmente, di quanti gradi ruotare il qubit e in che direzione). Naturalmente la teoria è molto più complessa, una rete neurale quantistica deve operare con almeno 4-6 qubit e questi possono essere "legati" tra di loro in modo tale che la rotazione di uno di questi qubit forzi la rotazione dell'altro. Ma l'obiettivo è sempre e comunque cercare le rotazioni migliori.
 
 Perfetto abbiamo visto come funzionano le reti neurali quantistiche, ma quindi queste portano un effettivo vantaggio?
+La rispsota semplice è "no", e la rispsota complicata come spesso accade è "dipende". Per definire un effettivo Vantaggio quantistico sono necessarie le seguenti condizioni:
+  Performance : L' algoritmo quantistico risolve il problema bene, ovvero è in grado di generalizzare dai dati di training per fare previsioni efficaci.
+  Speedup : L' algoritmo quantistico risolve il problema più velocemente di uno classico
+  Relevance : L' algoritmo deve essere utile (altrimenti parleremmo solo di Supremazia Quantistica)
+  Available : La tecnologia per implementare l'algoritmo deve essere accessibile (Dimostrare il vantaggio quantistico su un dispositivo costoso non avrebbe senso)
+
+  Non esiste ad oggi algoritmo in grado di soddisfare tutti i 4 criteri, 
