@@ -8,17 +8,21 @@ la teoria è abbastanza precisa, vediamo quindi cosa intendiamo con ognuno dei t
 - **Neural Network** Tipo di modello (rappresentazione in termini matematici, ma anche non) di Machine Learning. In particolare questo modello si ispira alle rete neurale naturale.
 
 Ok quindi una rete neural è un tipo di modello di Machine Learning che si ispire alla rete neurale umana, ma in che modo lo fa?
-Bè semplificando molto una rete neurale umana possiamo dire che i neuroni sono cellule in grado di ricevere e trasmettere informazioni attraverso segnali elettrici, perfetto un neurone artificiale possiamo dire faccia la stessa cosa. Il neurone artificiale è però più semplicemente una funzione e l' impulso elettrico un numero.
-Ovviamente ogni neurone può ricevere più numeri, in modo più formale diremo può ricevere più "inputs", e produrre un solo numero l' "output".
-I neuroni artificiali sono rappresentati tipicamente come dei cerchietti e le loro connessioni (i canali attraverso cui ricevono gli inputs) con delle righe.
-
+Bè semplificando molto una rete neurale umana possiamo dire che i neuroni naturali sono cellule in grado di ricevere e trasmettere informazioni attraverso segnali elettrici verso tutti gli altri neuroni collegati. La potenza dei segnali elettrici
+dipende dalle sinapsi (i collegamenti tra questi neuroni). Nella immagine qui sotto schematizzo il comportamento.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/79441ba7-54d5-4807-b2b3-586e829446a2" alt="reteNeurale">
 </p>
 <p align="center">
-  I cerchietti sono i neuroni, le linee i collegamenti tra neuroni.
+  I cerchietti sono i neuroni, le linee sono le sinapsi tra neuroni.
 </p>
+
+
+Perfetto un neurone artificiale possiamo dire faccia la stessa cosa, il neurone artificiale è però più semplicemente una funzione e gli impulsi elettrici dei numeri (inputs) che questa funzione è in grado di elaborare per poi produrre  a sua volta un numero (output).
+
+Ottimo e le sinpasi? La rappresentazione artificiale delle sinapsi sono la parte interessante delle reti neurali. Abbiamo detto che ogni neurone riceverà degli inputs dai neuroni vicini, ma questi input avranno tutti lo stesso impatto? 
+
 
 
 ## Ok, ma come funziona una rete neurale?
