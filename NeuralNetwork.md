@@ -9,11 +9,12 @@ la teoria è abbastanza precisa, vediamo quindi cosa intendiamo con ognuno dei t
 
 ## Ok quindi una rete neural è un tipo di modello di Machine Learning che si ispire alla rete neurale umana, ma in che modo lo fa? ##
 
-Bè semplificando molto una rete neurale umana possiamo dire che i neuroni sono cellule in grado di ricevere e trasmettere informazioni attraverso segnali elettrici, la potenza dei segnali elettrici è poi regolata dalle sinapsi, i collegamenti tra i neuroni.
-$$f(x_1, x_2)$$
+Bè semplificando molto una rete neurale umana possiamo dire che i neuroni sono cellule in grado di ricevere e trasmettere informazioni attraverso segnali elettrici, la potenza dei segnali elettrici è poi regolata dalle sinapsi, ovvero i collegamenti tra i neuroni.
 
 
 Perfetto, una rete artificiale è molto simile, un neurone artificiale è però più semplicemente una funzione, in grado di prendere degli input e produrre un output. 
+Quindi in termini matematici...
+$$f(x_1, x_2)$$
 
 
 Questi input sono tipicamente valori tra 0 e 1. Mentre le funzioni dette funzioni di attivazioni
