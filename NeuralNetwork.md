@@ -12,13 +12,9 @@ la teoria è abbastanza precisa, vediamo quindi cosa intendiamo con ognuno dei t
 Bè semplificando molto una rete neurale umana possiamo dire che i neuroni sono cellule in grado di ricevere e trasmettere informazioni attraverso segnali elettrici, la potenza dei segnali elettrici è poi regolata dalle sinapsi, ovvero i collegamenti tra i neuroni.
 
 
-Perfetto, una rete artificiale è molto simile, un neurone artificiale è però più semplicemente una funzione, in grado di prendere degli input e produrre un output. 
-Quindi in termini matematici...
-$$f(x_1, x_2... x_n)$$
+Perfetto, una rete artificiale è molto simile, un neurone artificiale è però più semplicemente una funzione, in grado di prendere degli input e produrre un output.
 
-
-Questi input sono tipicamente valori tra 0 e 1. Mentre le funzioni dette funzioni di attivazioni
-
+Questi input sono tipicamente valori che semplificando possiamo dire vanno da -1 a 1. Mentre le funzioni sono dette funzioni di attivazioni e sono tipicamente abbastanza semplici.
 Per comodità di sviluppo si tende a organizzare i neuroni artificiali in layer e tipicamente ogni neurone di un layer è collegato con tutti i neuroni del layer successivo come in figura.
 
 <p align="center">
