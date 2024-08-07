@@ -12,10 +12,14 @@ la teoria è abbastanza precisa, vediamo quindi cosa intendiamo con ognuno dei t
 
 In realtà è abbastanza semplice, ci basta definire cosa sia un neurone.
 **Neurone** oggetto in grado di prendere diversi input (valori in ingresso) e restituire un singolo output (in matematica, è una funzione di più variabili f(x,y,....z)). 
-Una rete neurale altro non è che un insieme di Neuroni artificiali organizzati in strutture dette layer. 
-
-Ok, come la rappresentiamo?
+Una rete neurale altro non è che un insieme di Neuroni artificiali organizzati in strutture dette layer. Tipicamente si utilizzano almeno 3 strati di layer.
+- **Input layer** L'insieme delle discipline Natural Language Processing, Knowledge Representation, Automated Reasoning e Machine Learning
+- **Hidden layer** Disciplina della AI che in particolare si occupa di far imparare ai computer, attraverso i dati, come risolvere i problemi senza essere esplicitamente istruita per farlo.
+- **Output layer** Tipo di modello (rappresentazione in termini matematici, ma anche non) di Machine Learning. In particolare questo modello si ispira alle rete neurale naturale.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/79441ba7-54d5-4807-b2b3-586e829446a2" alt="reteNeurale">
+</p>
+<p align="center">
+  Descrizione dell'immagine: Schema che mostra l'organizzazione dei neuroni artificiali in una rete neurale.
 </p>
