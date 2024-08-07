@@ -12,6 +12,8 @@ In informatica pura, si utilizzano i bit, in informatica quantistica si utilizza
 ![image](https://github.com/user-attachments/assets/e37ed8b7-47d6-4080-b558-8b823b8585f3)
 
 
+
+
 Quindi sì, in un certo qualsenso un qubit può contenere molta più informazione di un bit.
 Ecco, una rete neurale quantstica funziona in modo un po' diverso da una rete neurale classica, non esistono i neuroni, non esiste proprio una rete, esiste piuttosto un circuito quantistico in grado di operare sui qubit. Come opera sui qubit? Attraverso l'utilizzo di gate quantistici, oggetti in grado di "ruotare" il qubit. La parte interessante è che a seconda di quanto si ruotino questi qubit è possibile ottenere risposte diverse dalla rete quantistica e qui abbiamo l'analogia con la rete neurale classsica. In una rete neurale classica si cercano i pesi migliori per ottenere una risposta corretta dalla rete neurale, in una rete neurale quantistica si cercano le rotazioni migliori (letteralmente, di quanti gradi ruotare il qubit e in che direzione). Naturalmente la teoria è molto più complessa, una rete neurale quantistica deve operare con almeno 4-6 qubit e questi possono essere "legati" tra di loro in modo tale che la rotazione di uno di questi qubit forzi la rotazione dell'altro. Ma l'obiettivo è sempre e comunque cercare le rotazioni migliori.
 
