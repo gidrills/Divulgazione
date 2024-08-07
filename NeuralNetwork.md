@@ -29,10 +29,10 @@ Perfetto, e le sinapsi? Bè questa è la parte interessante delle reti neurali s
 Nella figura sopra quindi i collegamenti dovrebbero avere dei colori diversi, per distinguere che non sono tutti uguali.
 
 <p align="center">
-  <img src= "https://github.com/user-attachments/assets/7286a608-50ab-4ad0-bbb3-42d491370690" alt = "reteNeurale">
+  <img src= "https://github.com/user-attachments/assets/1f2558b4-004d-4ca2-8997-45f3986bebac" alt = "reteNeurale">
 </p>
 <p align="center">
-  Rispettivamente w1,w2,w3,w4 evidenziati in colore rosso, giallo, verde, blu
+  Rispettivamente w1,w2,w3,w4 evidenziati in colore rosso, giallo, verde, blu. Inoltre sono anche indicati i valori output prodotti dai neuroni dell'input layer
 </p>
 
 Il rafforzamento dei collegamenti avviene durante quella che è detta "fase di training" di una rete neurale in cui a una rete neurale si fanno analizzare una grosso di quantità di dati, e si rafforzano i collegamenti tra i neuroni o si riducono.
@@ -46,7 +46,7 @@ Tipicamente questa funzione è detta Funzione di Attivazione ed è molto semplic
 Per quanto riguarda il peso da attribuire ai collegamenti, basta aggiungere dei pesi, che quantifichino quanto l'informazione $$x_1, x_2, x_3, x_4$$ siano importanti. Questi pesi andranno indicati con $$w_1, w_2, w_3 e w_4$$. E per comodità in questo esempio facciamoli assumere valori tra 0 e 1.Ad esempio, un peso con valore 1 indicherà che l'informazione è molto importante, un peso con valore 0.5 mediamente importante e un peso con valore 0.25 poco importante e così via. Addirittura se per esempio il peso $$w_4$$ andasse a 0 questo vorrebbe dire che non importa quale outpur il neurone 4 del layer precedente stia producendo io lo ignorerò completamente.
 In questo modo la funzione diventa $$f(x_1w_1,x_2w_2,x_2w_3,x_4w_4)$$
 
-##Training## 
+## Training ## 
 
 Una rete neurale prima di poter essere utilizzata deve essere addestrata. L'addestramento altro non è che il momento in cui si scelgono i "pesi", o come abbiamo detto prima, stabiliamo quali neuroni vogliamo si attivino di più insieme. E' importante notare che una volta terminata la fase di training i pesi non verranno più toccati. 
 
