@@ -23,7 +23,7 @@ Per comodità di sviluppo si tende a organizzare i neuroni artificiali in layer 
 <p align="center">
   I cerchietti sono i neuroni, le linee i collegamenti tra neuroni.
 </p>
-
+### Ok ###
 Perfetto, e le sinapsi? Le sinapsi sono la parte interessante, delle reti neurali. Senza l'utilizzo delle sinapsi le reti non sarebbero in grado di "migliorare". Come facciamo a dire a una rete che si sta comportando bene o che si sta comportando male? Bè rafforziamo le sinapsi, rafforziamo i collegamenti tra alcuni neuroni che vogliamo si "attivino" di più e riduciamo i collegamenti tra altri che vogliamo si attivino "meno". In altri termini stabiliamo quali neuroni lavorano bene insieme e quali lavorano male.
 Ovviamente il discorso è più complicato di così, non esiste un comportamento corretto o sbaglaito di un gruppo di neuroni, non possiamo dire che sta lavorando bene o male un gruppo di neuroni, possiamo dire che in un certo momento ci sembra più utile lavori meno e in un altro momento ci sembra più utile tale gruppo di neuorni lavori di più. 
 Quindi in breve le sinapsi sono utilizzate per dire alla nostra rete neurale come si sta comportando.
