@@ -9,4 +9,5 @@ la teoria è abbastanza precisa, vediamo quindi cosa intendiamo con ognuno dei t
 
 
 ## Ok, ma come funziona una rete neurale ? ##
-In realtà è abbastanza semplice, ci basta definire cosa sia un neurone. Un neurone possiamo semplice descriverlo come un oggetto in grado di prendere diversi valori in ingresso e restituire 1 valore in uscita ( in matematichese sarebbe una funzione di tante variabili f(x_1,x_2....))
+In realtà è abbastanza semplice, ci basta definire cosa sia un neurone. Un neurone possiamo semplice descriverlo come un oggetto in grado di prendere diversi valori in ingresso e restituire 1 valore in uscita ( In matematichese sarebbe una funzione di tante variabili \( f(x_1, x_2, \ldots) \)
+)
