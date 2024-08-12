@@ -8,7 +8,7 @@ Vediamo però quattro consigli utili su come utilizzarlo in modo efficiente ⬇ 
 
 📍 Non fidarti della classificazione "Easy, Medium, Hard" fatta dal sito al 100%. Alcuni problemi segnati come medium, possono risultare più facili di quelli easy. Usa piuttosto l'acceptance rate come termine per stabilire quali sono i problemi più facili. 
 
-📍 Guardare le soluzioni a volte è più efficiente che intestardirsi nel risolvere il problema da sè a tutti i costi. Ricordati che la maggior parte dei problemi usano pattern di soluzione ricorrenti, magari questo pattern ancora non lo conosci. Guarda la soluzione, comprendi il pattern, e riprova il problema qualche giorno dopo 💡 .  
+📍 Guardare le soluzioni a volte è più efficiente che intestardirsi nel risolvere il problema da sè a tutti i costi. Ricordati che la maggior parte dei problemi usano pattern di soluzione ricorrenti, magari un determinato pattern semplicemente ancora non lo conosci. Guarda la soluzione, comprendi il pattern, e riprova il problema qualche giorno dopo 💡.  
 
 📍 Esercitati a parlare mentre completi il problema. Molte persone risolvono il problema nella propria testa, ma non sono poi in grado di spiegare la soluzione. Ricordati che a un recruiter interessa vedere anche come ragioni, e se saresti in grado di comunicare i tuo dubbi e le tue soluzioni in modo efficace. 🗣 
 
