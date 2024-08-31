@@ -103,7 +103,7 @@ Se bob nel suo messaggio scrive "E" fornirà meno informazione rispetto a scrive
 
 La quantità di informazione di un messaggio dipende quindi dalla probabilità che l'evento (o gli eventi) a cui si riferisce si verifichino.
 
-#In particolare dipende al logaritmo della probabilità I(x) = -log_2(x).
+- In particolare dipende al logaritmo della probabilità I(x) = -log_2(x).
 
 # Slide 6 Entropia della informazione
 
