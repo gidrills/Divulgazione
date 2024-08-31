@@ -1,18 +1,19 @@
 # Slide 1
 
-Titolo : Limite di Shannon, abbiamo già raggiunto il limite teorico alla compressione dei dati?
-Sottotitolo: Capiamo cosa significa comprimere un messaggio senza perdere informazione e se il limite teorico è stato raggiunto.
+Titolo: Limite di Shannon: esiste un limite teorico alla compressione dei dati?
+
+Sottotitolo: Capiamo quanto sia possibile comprimere un messaggio senza perdere informazione.
 
 # Slide 2 La informazione 54 caratteri
 
-Per comprendere cosa sia l'informazione, possiamo partire da una definizione piuttosto intuitiva che fu proposta da Claude Shannon nel 1948: l'informazione è ciò che riduce la nostra incertezza.
+Per comprendere cosa sia l'informazione, possiamo partire da una definizione piuttosto intuitiva proposta da Claude Shannon nel 1948: l'informazione è ciò che riduce la nostra incertezza.
 
 L'informazione può essere trasmessa attraverso messaggi, che consistono in sequenze di caratteri provenienti da un alfabeto specifico.
 
 Ad esempio:
 
-- L'alfabeto inglese è composto da 26 caratteri, le lettere.
-- L'alfabeto "informatico" invece, è formato da soli due caratteri, i bit: {0, 1}.
+L'alfabeto inglese è composto da 26 caratteri, le lettere.
+L'alfabeto "informatico", invece, è formato da soli due caratteri, i bit: {0, 1}.
 
 
 # Slide 3 La compressione
@@ -86,7 +87,7 @@ Ottimo, ma esiste una codifica per la quale si raggiunge una compressione massim
 
 # Slide 4
 
-Shannon sviluppò una teoria per rispondere a questa domanda. Iniziò col formalizzare il concetto di informazione. 
+Shannon sviluppò una teoria per rispondere a questa domanda.
 
 Si domandò: come si può misurare quanta informazione è contenuta in un messaggio?
 
@@ -99,23 +100,27 @@ Ad esempio, supponiamo Bob lanci un dado ma abbia un alfabeto limitato :
 
 
 # Slide 5
-Se bob nel suo messaggio scrive "E" fornirà meno informazione rispetto a scrivere "6". Questo perché "E" ha una probabilità di 2/3 di verificarsi e lascia incertezza ( potrebbero essere usciti 2,3,4 o 5 ), mentre "6" ha una probabilità di 1/6 e toglie tutta la incertezza.
+Se bob nel suo messaggio scrive "E" fornirà meno informazione rispetto a scrivere "6" o scrivere "1".
 
-La quantità di informazione di un messaggio dipende quindi dalla probabilità che l'evento (o gli eventi) a cui si riferisce si verifichino.
+Perchè?
 
-- In particolare dipende dal logaritmo della probabilità I(x) = -log_2(x).
+Bè, "E" ha una probabilità di 2/3 di verificarsi ma lascia incertezza (potrebbero essere usciti 2,3,4 o 5), mentre "6" ha una probabilità di 1/6 e toglie tutta la incertezza.
+
+La quantità di informazione dipende dalla probabilità dell'evento descritto. 
+
+**Più è raro l'evento, maggiore è la quantità di informazione associata.**
 
 # Slide 6 Entropia della informazione
 
 Ottimo, ancora uno sforzo. 
 
-Ad un dado sono assocciati 6 eventi mutuamente esclusivi, e ogni evento come abbiamo visto ha una informazione associata. Possiamo fare una media di questa quantità: una media della quantità di informazione.
+Ad un dado sono associati 6 eventi mutuamente esclusivi, e ogni evento come abbiamo visto ha una informazione associata. Possiamo fare una media di questa quantità: una media della quantità di informazione (indicata con I).
 
 $$
 H_{\text{dado}} = \frac{1}{6} \left[ I(\text{Estrazione} = 1) + I(\text{Estrazione} = 2) + I(\text{Estrazione} = 3) + ...\right] = 2.58496 Bit
 $$
 
-Questa quantità è detta entropia dell'informazione e rappresenta mediamente quanta informazione posso attendermi dalla lettura di un dado.
+Questa quantità è detta entropia dell'informazione e rappresenta mediamente quanta informazione posso attendermi dalla lettura del dado.
 
 Ok, e come ci aiuta a comprendere il limte della compressione ? ->
 
@@ -125,11 +130,11 @@ Ok, e come ci aiuta a comprendere il limte della compressione ? ->
 
 # Slide 7 (Limite di Shannon)
 
-Shannon usò l'entropia per dimostrare che esisteva un un limite alla compressione dei dati. 
+Shannon usò l'entropia per dimostrare che esisteva un limite alla compressione dei dati. 
 
 In termini intuitivi il primo teorema di Shannon afferma che il limite massimo di compressione dei dati senza perdita di informazione è determinato dall'entropia della sorgente di informazione (il dado). 
 
-In altri termini, la miglior codifica è quella che ci permette di costruire un messaggio il cui numero di bit per lettera è 2.5849 bits mediamente. Sotto quel valore è impossibile andare.
+**In altri termini, la miglior codifica è quella che ci permette di costruire un messaggio il cui numero di bit per lettera è 2.5849 bits mediamente. Sotto quel valore è impossibile andare.**
 
 
 # Slide 8 Esempio reale
@@ -187,6 +192,6 @@ Ma tenendo conto delle ridondanze, potremmo superare il limite di Shannon? ->
 
 # Slide 10
 
-La verità è che la entropia di Shannon appena calcolata si basa su un modello statistico incompleto. Per comodità noi abbiamo assunto implicitamente che non ci sia una dipendenza tra le lettere. Di fatto, la codifica Huffman considera la possibilità di leggere una "u" al 2.8 %, ma non considera la dipendenza tra "q" ed "u" ad esempio che in inglese è molto alta. Algoritmi usati in winrar, zip, 7zip ecc. tengono conto di queste dipendenze e codificano combinazioni di caratteri insieme.
+La verità è che la entropia di Shannon appena calcolata si basa su un modello statistico incompleto e non vale per tutti gli algoritmi di codifica. Noi abbiamo assunto implicitamente che non ci sia una dipendenza tra le lettere. Di fatto, la codifica Huffman considera la possibilità di leggere una "u" al 2.8 %, ma ad esempio non considera la dipendenza tra "q" ed "u", che in inglese è molto alta. Algoritmi usati in winrar, zip, 7zip ecc. tengono conto di queste dipendenze e codificano combinazioni di caratteri insieme (portando ad una entropia teorica e pratica più bassa).
 
  
