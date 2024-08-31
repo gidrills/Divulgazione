@@ -152,6 +152,8 @@ Per un'immagine, l'"alfabeto" sono i pixel, e la compressione dipende dalla prob
 Ma tenendo conto delle ridondanze, potremmo superare il limite di Shannon? ->
 
 - Nota qui scrivo la Codifica Huffman per ogni carattere, si potrebbero tabellare, e mostrare in una figura (anche solo i primi 5-6 caratteri):
+
+  
 | Character | Shannon-Fano Code | Huffman Code |
 |-----------|-------------------|--------------|
 | A         | 001               | 1111         |
