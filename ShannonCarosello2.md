@@ -141,7 +141,7 @@ Analogamente quindi per un testo inglese è possibile calcolare l'entropia e qui
 
 - suggerimento: Inserire qui screen di wikipedia o tabella che riporta la frequency letter inglese https://en.wikipedia.org/wiki/Letter_frequency 
 
-# Slide9 Esempio reale
+# Slide 9 Esempio reale
 
 Il sistema di codifica più usato ad oggi è quello di Huffman (evoluzione di Shannon-Fano), che comprime un testo inglese a circa 4,1083 bit per lettera, avvicinandosi al limite teorico di Shannon.
 
