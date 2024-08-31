@@ -123,7 +123,7 @@ Ok, e come ci aiuta a comprendere il limte della compressione ? ->
 
 
 
-# Slide7 (Limite di Shannon)
+# Slide 7 (Limite di Shannon)
 
 Shannon usò l'entropia per dimostrare che esisteva un un limite alla compressione dei dati. 
 
@@ -132,14 +132,14 @@ In termini intuitivi il primo teorema di Shannon afferma che il limite massimo d
 In altri termini, la miglior codifica è quella che ci permette di costruire un messaggio il cui numero di bit per lettera è 2.5849 bits mediamente. Sotto quel valore è impossibile andare.
 
 
-# Slide8 Esempio reale
+# Slide 8 Esempio reale
 
 Il dado è un esempio, ma nella realtà anche le lettere dell'alfabeto hanno una diversa probabilità di apparire in un messaggio (la E compare circa il 13% delle volte in un testo in inglese).
 Se nel caso del dado la probabilità di leggere "E" era 1/6 nel caso di un testo inglese è 13/100.
 
 Analogamente quindi per un testo inglese è possibile calcolare l'entropia e quindi la compressione massima, che risulta essere 3.9 bits per lettera circa. 
 
-# suggerimento: Inserire qui screen di wikipedia o tabella che riporta la frequency letter inglese https://en.wikipedia.org/wiki/Letter_frequency 
+- suggerimento: Inserire qui screen di wikipedia o tabella che riporta la frequency letter inglese https://en.wikipedia.org/wiki/Letter_frequency 
 
 # Slide9 Esempio reale
 
