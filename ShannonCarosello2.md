@@ -119,7 +119,7 @@ Questa quantità è detta entropia dell'informazione e rappresenta mediamente qu
 
 Ok, e come ci aiuta a comprendere il limte della compressione ? ->
 
-### Qui si potrebbe poi aggiungere una nota di questo tipo "Per i più esperti, la formula generale includerebbe le probabilità che l'evento accada", in quanto nella formula più generale la I va moltiplicata per la probabilità che l'evento accada, ma nel caso specifico del dado non è necessario perchè sono tutte 1/6 queste probablità. 
+- Nota: Qui si potrebbe poi aggiungere una nota di questo tipo "Per i più esperti, la formula generale includerebbe le probabilità che l'evento accada", in quanto nella formula più generale la I va moltiplicata per la probabilità che l'evento accada, ma nel caso specifico del dado non è necessario perchè sono tutte 1/6 queste probablità. 
 
 
 
@@ -151,7 +151,7 @@ Per un'immagine, l'"alfabeto" sono i pixel, e la compressione dipende dalla prob
 
 Ma tenendo conto delle ridondanze, potremmo superare il limite di Shannon? ->
 
-# qui scrivo la Codifica Huffman per ogni carattere, si potrebbero tabellare, e mostrare in una figura (anche solo i primi 5-6 caratteri):
+- Nota qui scrivo la Codifica Huffman per ogni carattere, si potrebbero tabellare, e mostrare in una figura (anche solo i primi 5-6 caratteri):
 | Character | Shannon-Fano Code | Huffman Code |
 |-----------|-------------------|--------------|
 | A         | 001               | 1111         |
