@@ -1,3 +1,5 @@
+
+**Slide 1**
 Redis, il database nato in Italia e usato da Twitter e GitHub!
 
 Scopri la storia di antirez e di come ha creato Redis! →
